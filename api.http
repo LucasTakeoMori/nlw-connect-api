@@ -5,3 +5,6 @@ Content-type: application/json
   "name": "Lucas Takeo Mori",
   "email": "lucas.io@domain.ai"
 }
+
+###
+GET http://localhost:3333/invites/lucas123
