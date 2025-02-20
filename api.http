@@ -1,6 +1,8 @@
 POST http://localhost:3333/subscriptions
 Content-type: application/json
 
+  # include referrer id to test other routes created
+  # id: referrerId
 {
   "name": "Lucas Takeo Mori",
   "email": "lucas.io@domain.ai"
@@ -8,3 +10,16 @@ Content-type: application/json
 
 ###
 GET http://localhost:3333/invites/lucas123
+
+###
+GET http://localhost:3333/subscribers/:lucas123/ranking/clicks
+
+
+###
+GET http://localhost:3333/subscribers/id/ranking/clicks
+
+###
+GET http://localhost:3333/subscribers/id/ranking/count
+
+###
+GET http://localhost:3333/subscribers/id/ranking/position
