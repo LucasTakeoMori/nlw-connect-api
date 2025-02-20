@@ -5,7 +5,8 @@
   "license": "MIT",
   "author": "Lucas Takeo Mori",
   "scripts": {
-    "dev": "tsx watch --env-file=.env  src/server.ts"
+    "dev": "tsx watch --env-file=.env  src/server.ts",
+    "build": "tsup-node"
   },
   "dependencies": {
     "@fastify/cors": "^10.0.2",
@@ -22,6 +23,7 @@
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.13.4",
     "drizzle-kit": "^0.30.4",
+    "tsup": "^8.3.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   }
